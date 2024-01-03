@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <title>Dhruva Sundararajan - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Custom styles */
-        .nav-container {
-          background-color: #0d4205; /* Change to your preferred color */
+      .nav-container {
+        background-color: #0d4205; /* Change to your preferred color */
       }
       .nav-container a {
-          font-size: 30px; /* Larger font size */
-          color: #fbf191; /* Light colored text, change as needed */
+        font-size: 30px; /* Larger font size */
+        color: #fbf191; /* Light colored text, change as needed */
       }
       .nav-container a:hover {
-          color: #edf2f7; /* Lighter color on hover */
+        color: #edf2f7; /* Lighter color on hover */
       }
-        .profile-section {
-            text-align: left;
-            padding: 20px;
-        }
-        .profile-links {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .profile-links li {
-            margin-bottom: 10px;
-        }
-        .profile-links a {
-            color: #4a5568;
-            text-decoration: none;
-        }
-        .profile-links a:hover {
-            text-decoration: underline;
-        }
-        .profile-photo {
-          border-radius: 70%; /* Makes the image circular */
-          object-fit: cover; /* Keeps the aspect ratio and covers the area */
-          width: 250px; /* Set the width as needed */
-          height: 250px; /* Set the height as needed */
-          margin: auto; /* Center the image */
-        }
+      .profile-section {
+        text-align: left;
+        padding: 20px;
+      }
+      .profile-links {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .profile-links li {
+        margin-bottom: 10px;
+      }
+      .profile-links a {
+        color: #4a5568;
+        text-decoration: none;
+      }
+      .profile-links a:hover {
+        text-decoration: underline;
+      }
+      .profile-photo {
+        border-radius: 70%; /* Makes the image circular */
+        object-fit: cover; /* Keeps the aspect ratio and covers the area */
+        width: 250px; /* Set the width as needed */
+        height: 250px; /* Set the height as needed */
+        margin: auto; /* Center the image */
+      }
     </style>
-</head>
-
-<body class="bg-gray-100">
+  </head>
+  <body class="bg-gray-100">
     <div class="nav-container py-3">
         <nav class="container mx-auto flex justify-between px-4">
-            <ul class="flex space-x-4">
+          <div class="w-full">
+            <!-- Profile Section -->
+            <div class="w-1/3">
+              <ul class="flex space-x-4">
                 <li><a href="index.html" class="nav-link">Home</a></li>
             </ul>
-            <ul class="flex space-x-4">
-              <li><a href="publications.html" class="nav-link">Publications</a></li>
-            </ul>
+            </div>
+            <div class="w-full">
+              <ul class="flex space-x-4">
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+              </ul>
+            </div>
+          </div> 
         </nav>
     </div>
-
-    <<div class="container mx-auto px-4 py-16">
+    <div class="container mx-auto px-4 py-16">
       <div class="w-full">
-          <!-- Profile Section -->
-          <div class="profile-section w-1/3 flex flex-col items-center justify-center">
-              <!-- Profile Image Container -->
-              <div class="profile-photo-container">
-                  <img src="Dhruva_Photo.jpg" alt="Dhruva Sundararajan" class="profile-photo">
-              </div>
-              <h1 class="text-3xl font-bold">Dhruva Sundararajan</h1>
-              <!-- Links under your name -->
-              <ul class="profile-links">
-                  <li><a href="your_link_1">Link 1</a></li>
-                  <li><a href="your_link_2">Link 2</a></li>
-                  <!-- Add more links as needed -->
-              </ul>
-          </div>
-  
-          <h2 class="text-5xl font-bold text-gray-800">Publications</h2>
-      </div>
-  </div>
-
-        <div class="w-2/3">
-            <!-- Content of your homepage goes here -->
+        <div class="profile-section w-1/3 flex flex-col items-center justify-center">
+            <!-- Profile Image Container -->
+            <div class="profile-photo-container">
+                <img src="Dhruva_Photo.jpg" alt="Dhruva Sundararajan" class="profile-photo">
+            </div>
+            <h1 class="text-3xl font-bold">Dhruva Sundararajan</h1>
+            <!-- Links under your name -->
+            <ul class="profile-links">
+                <li><a href="your_link_1">Link 1</a></li>
+                <li><a href="your_link_2">Link 2</a></li>
+                <!-- Add more links as needed -->
+            </ul>
         </div>
+        <div class="w-full">
+          <h2 class="text-5xl font-bold text-gray-800">Biography</h2>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
