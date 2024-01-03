@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         /* Additional custom styles */
-        nav ul {
+        .nav-container {
             background-color: #4a5568; /* Change to your preferred color */
         }
-        nav a {
-            font-size: 20px; /* Larger font size */
+        .nav-container a {
+            font-size: 30px; /* Larger font size */
             color: #f7fafc; /* Light colored text, change as needed */
         }
-        nav a:hover {
+        .nav-container a:hover {
             color: #edf2f7; /* Lighter color on hover */
         }
     </style>
@@ -22,18 +22,20 @@
 
 <body class="bg-gray-100">
 
+    <div class="nav-container py-3">
+        <nav class="container mx-auto px-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <!-- Add more navigation links here if needed -->
+            </ul>
+        </nav>
+    </div>
+
     <div class="container mx-auto px-4">
         <header class="text-center py-16">
             <h1 class="text-5xl font-bold text-gray-800">Dhruva Sundararajan</h1>
         </header>
-
-        <nav>
-            <ul class="flex justify-center space-x-4">
-                <li><a href="index.html" class="hover:text-gray-800">Home</a></li>
-                <li><a href="publications.html" class="hover:text-gray-800">Publications</a></li>
-                <!-- Add more navigation links here if needed -->
-            </ul>
-        </nav>
 
         <!-- Content of your homepage goes here -->
 
