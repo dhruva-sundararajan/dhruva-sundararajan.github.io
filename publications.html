@@ -6,28 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Additional custom styles */
+        /* Custom styles */
         .nav-container {
-            background-color: #0d4205; /* Change to your preferred color */
+          background-color: #0d4205; /* Change to your preferred color */
+      }
+      .nav-container a {
+          font-size: 30px; /* Larger font size */
+          color: #fbf191; /* Light colored text, change as needed */
+      }
+      .nav-container a:hover {
+          color: #edf2f7; /* Lighter color on hover */
+      }
+        .profile-section {
+            text-align: left;
+            padding: 20px;
         }
-        .nav-container a {
-            font-size: 30px; /* Larger font size */
-            color: #fbf191; /* Light colored text, change as needed */
+        .profile-links {
+            list-style-type: none;
+            padding-left: 0;
         }
-        .nav-container a:hover {
-            color: #edf2f7; /* Lighter color on hover */
+        .profile-links li {
+            margin-bottom: 10px;
+        }
+        .profile-links a {
+            color: #4a5568;
+            text-decoration: none;
+        }
+        .profile-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body class="bg-gray-100">
-
     <div class="nav-container py-3">
-        <nav class="container mx-auto px-4">
-            <ul class="flex justify-center space-x-4">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <!-- Add more navigation links here if needed -->
+        <nav class="container mx-auto flex justify-between px-4">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+            </ul>
+            <ul class="flex space-x-4">
+              <li><a href="publications.html" class="nav-link">Publications</a></li>
             </ul>
         </nav>
     </div>
