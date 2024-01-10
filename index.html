@@ -45,12 +45,18 @@
     .name-container {
       text-align: center;
     }
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
     </style>
   </head>
   <body class="bg-gray-100">
     <div class="nav-container py-3">
       <nav class="container mx-auto flex justify-center px-4">
-        <ul class="flex space-x-8">
+        <ul class="flex space-x-8 fixed-top">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#publications" class="nav-link">Publications</a></li>
         </ul>
