@@ -64,6 +64,40 @@
       .bg-section-alt {
         background-color: #fff4d4;
       }
+      @media screen and (max-width: 768px) {
+        .nav-container, .profile-section, .name-container {
+          width: 100%;
+          text-align: center; /* Center-align text for better readability */
+        }
+        .profile-photo {
+          width: 100px;
+          height: 100px;
+          margin: 10px auto; /* Center the image */
+        }
+        .container {
+          padding: 0 15px;
+        }
+        .flex {
+          flex-direction: column;
+        }
+        .w-1/3, .w-full {
+          width: 100%;
+        }
+        .text-xl, .text-2xl, .text-3xl, .text-4xl {
+            font-size: 1.5rem; /* Adjust based on your preference */
+        }
+        .nav-link {
+            font-size: 1.2rem;
+        }
+        .space-x-8 li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .profile-links li, article ul li {
+            font-size: 1rem; /* Smaller font size for list items */
+        }
+      }
+    
     </style>
   </head>
   <body class="text-justify">
