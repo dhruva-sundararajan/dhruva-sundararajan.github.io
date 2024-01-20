@@ -89,9 +89,9 @@
           </div>
           <div class="flex justify-end items-center w-full md:w-full">
             <ul class="hidden space-x-8 md:w-full md:flex md:flex-row md:items-end md:justify-end md:space-x-8" id="mobile-menu">
-              <li><a href="#recent-news" class="nav-link text-xl md:text-2xl">Recent News</a></li>
-              <li><a href="#experiences" class="nav-link text-xl md:text-2xl">Experiences</a></li>
-              <li><a href="#papers" class="nav-link text-xl md:text-2xl">Papers</a></li>
+              <li><a href="#recent-news" class="nav-link text-xl md:text-2xl" id="news">Recent News</a></li>
+              <li><a href="#experiences" class="nav-link text-xl md:text-2xl" id="exp">Experiences</a></li>
+              <li><a href="#papers" class="nav-link text-xl md:text-2xl" id="pap">Papers</a></li>
             </ul>
           </div>
         </nav>
@@ -370,9 +370,13 @@
     </section>
     <script>
       const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const newsButton = document.getElementById('news');
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenuButton.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
+      });
+      newsMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
     </script>
   </body>
