@@ -87,8 +87,8 @@
             <a href="#home" class="nav-link text-2xl md:text-center md:text-3xl">Homepage</a>
           </div>
           <div class="flex justify-end items-center w-full md:w-full">
-            <button class="text-3xl md:hidden" id="mobile-menu-button">☰</button>
-            <ul class="hidden space-x-8 md:w-full md:flex md:flex-row md:items-end md:justify-end md:space-x-8" id="mobile-menu">
+            <button class="text-3xl" id="mobile-menu-button">☰</button>
+            <ul class="hidden md:hidden space-x-8 md:w-full md:flex md:flex-row md:items-end md:justify-end md:space-x-8" id="mobile-menu">
               <li><button id="news"><a href="#recent-news" class="nav-link text-xl md:text-2xl">Recent News</a></button></li>
               <li><button id="exp"><a href="#experiences" class="nav-link text-xl md:text-2xl">Experiences</a></button></li>
               <li><button id="pap"><a href="#papers" class="nav-link text-xl md:text-2xl">Papers</a></button></li>
@@ -371,11 +371,19 @@
     <script>
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const newsButton = document.getElementById('news');
+      const expButton = document.getElementById('exp');
+      const papButton = document.getElementById('pap');
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenuButton.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
       });
       newsButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+      expButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+      papButton.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
       });
     </script>
