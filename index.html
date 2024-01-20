@@ -367,9 +367,10 @@
       </div>
     </section>
     <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-          var menu = document.getElementById('mobile-menu');
+      document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.getElementById('mobile-menu-button');
+        var menu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', function() {
           menu.classList.toggle('hidden');
         });
       });
