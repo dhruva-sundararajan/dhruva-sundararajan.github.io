@@ -369,11 +369,15 @@
       </div>
     </section>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var menuButton = document.getElementById('mobile-menu-button');
-        var menu = document.getElementById('mobile-menu');
-        menuButton.addEventListener('click', function() {
-          menu.classList.toggle('hidden');
+      document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.querySelector('.md:hidden ul');
+        mobileMenuButton.addEventListener('click', function () {
+          if (mobileMenu.style.display === 'block') {
+            mobileMenu.style.display = 'none';
+          } else {
+            mobileMenu.style.display = 'block';
+          }
         });
       });
     </script>
