@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section id="home" className="bg-section min-h-screen">
+    <div className="bg-section min-h-screen page-transition">
       <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Profile Section */}
@@ -137,7 +137,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

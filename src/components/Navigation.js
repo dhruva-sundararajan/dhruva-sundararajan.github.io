@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) => {
+const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, currentPath }) => {
+  const location = useLocation();
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,34 +18,40 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) => {
         <nav className="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-16">
           {/* Logo/Home */}
           <div className="flex items-center">
-            <button 
-              onClick={() => scrollToSection('home')} 
-              className="nav-link text-2xl md:text-3xl font-bold hover:text-accent-color transition-all duration-300"
+            <Link 
+              to="/" 
+              className="nav-link text-2xl md:text-3xl font-bold hover:text-accent-color transition-all duration-300 homepage-title"
             >
-              Dhruva Sundararajan
-            </button>
+              🚀 Dhruva
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('recent-news')} 
-              className="nav-link text-lg font-medium hover:text-accent-color transition-all duration-300"
+            <Link 
+              to="/news"
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
+                location.pathname === '/news' ? 'nav-active' : ''
+              }`}
             >
               Recent News
-            </button>
-            <button 
-              onClick={() => scrollToSection('experiences')} 
-              className="nav-link text-lg font-medium hover:text-accent-color transition-all duration-300"
+            </Link>
+            <Link 
+              to="/experiences"
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
+                location.pathname === '/experiences' ? 'nav-active' : ''
+              }`}
             >
               Experiences
-            </button>
-            <button 
-              onClick={() => scrollToSection('papers')} 
-              className="nav-link text-lg font-medium hover:text-accent-color transition-all duration-300"
+            </Link>
+            <Link 
+              to="/publications"
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
+                location.pathname === '/publications' ? 'nav-active' : ''
+              }`}
             >
               Publications
-            </button>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -71,28 +80,37 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) => {
               <div id="mobile-menu" className="mt-2">
                 <ul className="space-y-2">
                   <li>
-                    <button 
-                      onClick={() => scrollToSection('recent-news')} 
-                      className="nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                    <Link 
+                      to="/news"
+                      onClick={closeMobileMenu}
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                        location.pathname === '/news' ? 'nav-active' : ''
+                      }`}
                     >
                       📰 Recent News
-                    </button>
+                    </Link>
                   </li>
                   <li>
-                    <button 
-                      onClick={() => scrollToSection('experiences')} 
-                      className="nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                    <Link 
+                      to="/experiences"
+                      onClick={closeMobileMenu}
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                        location.pathname === '/experiences' ? 'nav-active' : ''
+                      }`}
                     >
                       💼 Experiences
-                    </button>
+                    </Link>
                   </li>
                   <li>
-                    <button 
-                      onClick={() => scrollToSection('papers')} 
-                      className="nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                    <Link 
+                      to="/publications"
+                      onClick={closeMobileMenu}
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                        location.pathname === '/publications' ? 'nav-active' : ''
+                      }`}
                     >
                       📚 Publications
-                    </button>
+                    </Link>
                   </li>
                 </ul>
               </div>

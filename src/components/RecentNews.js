@@ -25,7 +25,7 @@ const RecentNews = () => {
   ];
 
   return (
-    <section id="recent-news" className="bg-section-alt min-h-screen">
+    <div className="bg-section-alt min-h-screen page-transition">
       <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Header */}
@@ -61,7 +61,7 @@ const RecentNews = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
