@@ -1,0 +1,85 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: justify;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-container {
+  background-color: #0d4205;
+}
+
+.nav-container a {
+  color: #fbf191;
+}
+
+.nav-container a:hover {
+  color: #edf2f7;
+}
+
+.profile-section {
+  text-align: left;
+  padding: 20px;
+}
+
+.profile-photo {
+  object-fit: contain;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+}
+
+.name-container {
+  text-align: center;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bg-section {
+  background-color: #fff8E1;
+}
+
+.text-main-content {
+  color: #0a2a5d;
+}
+
+.text-heading-content {
+  color: #0a2a4f;
+}
+
+.bg-section-alt {
+  background-color: #fff4d4;
+}
+
+#mobile-menu {
+  padding-left: 20px;
+}
+
+#mobile-menu-button {
+  color: #fbf191;
+}
+
+#mobile-menu {
+  padding-left: 1rem;
+}
+
+#mobile-menu li {
+  margin: 0;
+  padding: 0.25rem 0;
+  text-align: left;
+} 
