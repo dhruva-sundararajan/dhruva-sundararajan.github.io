@@ -46,19 +46,19 @@ code {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-medium);
-  padding-top: 0.4rem !important;
-  padding-bottom: 0.4rem !important;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
 }
 
 .nav-container a,
 .nav-container button {
   color: #ffffff;
   font-weight: 500;
-  font-size: 1rem !important;
+  font-size: inherit !important;
   transition: all 0.3s ease;
   position: relative;
-  padding-top: 0.2rem !important;
-  padding-bottom: 0.2rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .nav-container a:hover,
@@ -94,9 +94,9 @@ code {
   background-clip: text;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.025em;
-  font-size: 1.4rem !important;
-  padding-top: 0.1rem !important;
-  padding-bottom: 0.1rem !important;
+  font-size: inherit !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* Profile Section */
@@ -332,20 +332,20 @@ a:hover::after {
 @media (min-width: 768px) {
   .nav-container a,
   .nav-container button {
-    font-size: 1.08rem !important;
+    font-size: 1.25rem !important;
   }
   .homepage-title {
-    font-size: 1.8rem !important;
+    font-size: 2.2rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .nav-container a,
   .nav-container button {
-    font-size: 1.12rem !important;
+    font-size: 1.25rem !important;
   }
   .homepage-title {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
 }
 
@@ -393,7 +393,7 @@ a:hover::after {
 
 /* Content Spacing */
 .container {
-  padding-top: 80px; /* Account for fixed navigation */
+  padding-top: 100px !important;
 }
 
 /* List Styling */
