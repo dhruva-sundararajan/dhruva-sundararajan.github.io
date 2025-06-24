@@ -435,7 +435,19 @@ a:hover::after {
 
 /* Content Spacing */
 .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 100px !important;
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* List Styling */
