@@ -6,24 +6,23 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
 
   return (
     <section id="navigation">
-      <div className="nav-container py-2 fixed-top" style={{ minHeight: '48px' }}>
-        <nav className="container mx-auto flex justify-between items-center px-2 md:px-6 lg:px-10" style={{ minHeight: '48px' }}>
+      <div className="nav-container py-4 fixed-top">
+        <nav className="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-16">
           {/* Logo/Home */}
           <div className="flex items-center">
             <Link 
               to="/" 
-              className="nav-link text-xl md:text-2xl font-bold hover:text-accent-color transition-all duration-300 homepage-title"
-              style={{ padding: 0, margin: 0 }}
+              className="nav-link text-2xl md:text-3xl font-bold hover:text-accent-color transition-all duration-300 homepage-title"
             >
-              Homepage
+              🚀 Dhruva
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/news"
-              className={`nav-link text-base font-medium hover:text-accent-color transition-all duration-300 ${
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
                 location.pathname === '/news' ? 'nav-active' : ''
               }`}
             >
@@ -31,7 +30,7 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
             </Link>
             <Link 
               to="/experiences"
-              className={`nav-link text-base font-medium hover:text-accent-color transition-all duration-300 ${
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
                 location.pathname === '/experiences' ? 'nav-active' : ''
               }`}
             >
@@ -39,7 +38,7 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
             </Link>
             <Link 
               to="/publications"
-              className={`nav-link text-base font-medium hover:text-accent-color transition-all duration-300 ${
+              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
                 location.pathname === '/publications' ? 'nav-active' : ''
               }`}
             >
@@ -52,9 +51,8 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
             <button 
               id="mobile-menu-button" 
               onClick={toggleMobileMenu}
-              className="text-xl hover:bg-white hover:bg-opacity-10 rounded-lg p-1 transition-all duration-300"
+              className="text-2xl hover:bg-white hover:bg-opacity-10 rounded-lg p-2 transition-all duration-300"
               aria-label="Toggle mobile menu"
-              style={{ minHeight: '36px', minWidth: '36px' }}
             >
               {mobileMenuOpen ? '✕' : '☰'}
             </button>
@@ -70,40 +68,40 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
                 : 'max-h-0 opacity-0 invisible'
             } overflow-hidden`}
           >
-            <div className="container mx-auto px-2 pb-2">
-              <div id="mobile-menu" className="mt-1">
-                <ul className="space-y-1">
+            <div className="container mx-auto px-4 pb-4">
+              <div id="mobile-menu" className="mt-2">
+                <ul className="space-y-2">
                   <li>
                     <Link 
                       to="/news"
                       onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-2 px-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
                         location.pathname === '/news' ? 'nav-active' : ''
                       }`}
                     >
-                      Recent News
+                      📰 Recent News
                     </Link>
                   </li>
                   <li>
                     <Link 
                       to="/experiences"
                       onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-2 px-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
                         location.pathname === '/experiences' ? 'nav-active' : ''
                       }`}
                     >
-                      Experiences
+                      💼 Experiences
                     </Link>
                   </li>
                   <li>
                     <Link 
                       to="/publications"
                       onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-2 px-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
+                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
                         location.pathname === '/publications' ? 'nav-active' : ''
                       }`}
                     >
-                      Publications
+                      📚 Publications
                     </Link>
                   </li>
                 </ul>
