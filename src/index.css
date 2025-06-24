@@ -46,8 +46,16 @@ code {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-medium);
-  padding-top: 0.1rem !important;
-  padding-bottom: 0.1rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 44px;
+}
+
+/* Remove extra vertical padding from nav inner container */
+.nav-container nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 44px;
 }
 
 .nav-container a,
