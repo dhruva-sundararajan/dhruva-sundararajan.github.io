@@ -45,7 +45,7 @@ code {
   background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   box-shadow: 0 2px 8px 0 rgba(30,64,175,0.08);
-  min-height: 44px;
+  min-height: 55px;
   padding: 0;
   position: fixed;
   width: 100%;
@@ -56,10 +56,10 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 44px;
+  min-height: 55px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.875rem;
 }
 
 .nav-logo {
@@ -75,9 +75,9 @@ code {
 .nav-link {
   color: #fff;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.375rem;
   text-decoration: none;
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.625rem;
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
 }
@@ -88,7 +88,7 @@ code {
 }
 
 .homepage-title {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #f59e0b, #f97316, #ef4444);
   -webkit-background-clip: text;
@@ -134,7 +134,10 @@ code {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1.375rem;
+  }
+  .homepage-title {
+    font-size: 2rem;
   }
 }
 
@@ -543,7 +546,7 @@ ul li::before {
   background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   box-shadow: 0 2px 8px 0 rgba(30,64,175,0.08);
-  min-height: 44px;
+  min-height: 55px;
   padding: 0;
   position: fixed;
   width: 100%;
@@ -554,10 +557,10 @@ ul li::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 44px;
+  min-height: 55px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.875rem;
 }
 
 .nav-logo {
@@ -573,9 +576,9 @@ ul li::before {
 .nav-link {
   color: #fff;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.375rem;
   text-decoration: none;
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.625rem;
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
 }
@@ -586,7 +589,7 @@ ul li::before {
 }
 
 .homepage-title {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #f59e0b, #f97316, #ef4444);
   -webkit-background-clip: text;
@@ -632,6 +635,9 @@ ul li::before {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1.375rem;
+  }
+  .homepage-title {
+    font-size: 2rem;
   }
 } 
