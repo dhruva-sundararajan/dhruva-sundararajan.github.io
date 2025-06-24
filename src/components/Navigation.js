@@ -14,7 +14,7 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
               to="/" 
               className="nav-link homepage-title"
             >
-              🚀 Dhruva
+              Homepage
             </Link>
           </div>
           {/* Desktop Navigation */}
