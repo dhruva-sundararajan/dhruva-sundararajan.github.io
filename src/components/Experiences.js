@@ -66,35 +66,29 @@ const Experiences = () => {
             <div className="space-y-6">
               {experiences.map((exp, index) => (
                 <div key={index} className="experience-item fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex flex-col md:flex-row md:items-start gap-4 mb-4">
-                    <div className="flex-shrink-0">
-                      <span className="inline-block bg-secondary-color text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        {exp.period}
-                      </span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold text-main-content mb-2">
-                        {exp.title}
-                      </h3>
-                      <h4 className="text-lg md:text-xl font-semibold text-main-content mb-2">
-                        {exp.institution}
-                      </h4>
-                      {exp.description && (
-                        <p className="text-lg text-main-content mb-3">
-                          {exp.description}
-                        </p>
-                      )}
-                      {exp.details && (
-                        <ul className="space-y-2">
-                          {exp.details.map((detail, detailIndex) => (
-                            <li key={detailIndex} className="text-lg text-main-content leading-relaxed">
-                              {detail}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </div>
+                  <span className="inline-block bg-secondary-color text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {exp.period}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold text-main-content mt-2 mb-2">
+                    {exp.title}
+                  </h3>
+                  <h4 className="text-lg md:text-xl font-semibold text-main-content mb-2">
+                    {exp.institution}
+                  </h4>
+                  {exp.description && (
+                    <p className="text-lg text-main-content mb-3">
+                      {exp.description}
+                    </p>
+                  )}
+                  {exp.details && (
+                    <ul className="space-y-2">
+                      {exp.details.map((detail, detailIndex) => (
+                        <li key={detailIndex} className="text-lg text-main-content leading-relaxed">
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>

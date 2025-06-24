@@ -43,18 +43,12 @@ const RecentNews = () => {
             <div className="space-y-6">
               {newsItems.map((item, index) => (
                 <div key={index} className="news-item fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex flex-col md:flex-row md:items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <span className="inline-block bg-accent-color text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        {item.date}
-                      </span>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-lg text-main-content leading-relaxed">
-                        {item.content}
-                      </p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-accent-color text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {item.date}
+                  </span>
+                  <p className="text-lg text-main-content leading-relaxed mt-2">
+                    {item.content}
+                  </p>
                 </div>
               ))}
             </div>
