@@ -6,108 +6,80 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
 
   return (
     <section id="navigation">
-      <div className="nav-container py-4 fixed-top">
-        <nav className="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-16">
+      <div className="nav-container fixed-top">
+        <nav>
           {/* Logo/Home */}
-          <div className="flex items-center">
+          <div className="nav-logo">
             <Link 
               to="/" 
-              className="nav-link text-2xl md:text-3xl font-bold hover:text-accent-color transition-all duration-300 homepage-title"
+              className="nav-link homepage-title"
             >
               🚀 Dhruva
             </Link>
           </div>
-          
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="nav-links-desktop">
             <Link 
               to="/news"
-              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
-                location.pathname === '/news' ? 'nav-active' : ''
-              }`}
+              className={`nav-link${location.pathname === '/news' ? ' nav-active' : ''}`}
             >
               Recent News
             </Link>
             <Link 
               to="/experiences"
-              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
-                location.pathname === '/experiences' ? 'nav-active' : ''
-              }`}
+              className={`nav-link${location.pathname === '/experiences' ? ' nav-active' : ''}`}
             >
               Experiences
             </Link>
             <Link 
               to="/publications"
-              className={`nav-link text-lg font-medium hover:text-accent-color transition-all duration-300 ${
-                location.pathname === '/publications' ? 'nav-active' : ''
-              }`}
+              className={`nav-link${location.pathname === '/publications' ? ' nav-active' : ''}`}
             >
               Publications
             </Link>
           </div>
-          
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="nav-mobile-btn">
             <button 
               id="mobile-menu-button" 
               onClick={toggleMobileMenu}
-              className="text-2xl hover:bg-white hover:bg-opacity-10 rounded-lg p-2 transition-all duration-300"
               aria-label="Toggle mobile menu"
             >
               {mobileMenuOpen ? '✕' : '☰'}
             </button>
           </div>
         </nav>
-        
         {/* Mobile Menu */}
-        <div className="md:hidden">
-          <div 
-            className={`transition-all duration-300 ease-in-out ${
-              mobileMenuOpen 
-                ? 'max-h-64 opacity-100 visible' 
-                : 'max-h-0 opacity-0 invisible'
-            } overflow-hidden`}
-          >
-            <div className="container mx-auto px-4 pb-4">
-              <div id="mobile-menu" className="mt-2">
-                <ul className="space-y-2">
-                  <li>
-                    <Link 
-                      to="/news"
-                      onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
-                        location.pathname === '/news' ? 'nav-active' : ''
-                      }`}
-                    >
-                      📰 Recent News
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to="/experiences"
-                      onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
-                        location.pathname === '/experiences' ? 'nav-active' : ''
-                      }`}
-                    >
-                      💼 Experiences
-                    </Link>
-                  </li>
-                  <li>
-                    <Link 
-                      to="/publications"
-                      onClick={closeMobileMenu}
-                      className={`nav-link w-full text-left py-3 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300 block ${
-                        location.pathname === '/publications' ? 'nav-active' : ''
-                      }`}
-                    >
-                      📚 Publications
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div className="nav-mobile-menu" style={{ display: mobileMenuOpen ? 'block' : 'none' }}>
+          <ul>
+            <li>
+              <Link 
+                to="/news"
+                onClick={closeMobileMenu}
+                className={`nav-link${location.pathname === '/news' ? ' nav-active' : ''}`}
+              >
+                📰 Recent News
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/experiences"
+                onClick={closeMobileMenu}
+                className={`nav-link${location.pathname === '/experiences' ? ' nav-active' : ''}`}
+              >
+                💼 Experiences
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/publications"
+                onClick={closeMobileMenu}
+                className={`nav-link${location.pathname === '/publications' ? ' nav-active' : ''}`}
+              >
+                📚 Publications
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
