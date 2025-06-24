@@ -46,14 +46,19 @@ code {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-medium);
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
 }
 
 .nav-container a,
 .nav-container button {
   color: #ffffff;
   font-weight: 500;
+  font-size: 1rem !important;
   transition: all 0.3s ease;
   position: relative;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
 }
 
 .nav-container a:hover,
@@ -89,6 +94,9 @@ code {
   background-clip: text;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.025em;
+  font-size: 1.4rem !important;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
 }
 
 /* Profile Section */
@@ -318,6 +326,26 @@ a:hover::after {
   
   .text-heading-content {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-container a,
+  .nav-container button {
+    font-size: 1.08rem !important;
+  }
+  .homepage-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-container a,
+  .nav-container button {
+    font-size: 1.12rem !important;
+  }
+  .homepage-title {
+    font-size: 2rem !important;
   }
 }
 
