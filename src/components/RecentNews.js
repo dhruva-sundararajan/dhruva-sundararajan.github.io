@@ -3,24 +3,8 @@ import React from 'react';
 const RecentNews = () => {
   const newsItems = [
     {
-      date: "Dec 2024",
-      content: "Journal Publication \"A Decision Framework With q-Rung Fuzzy Preferences for Ranking Barriers Affecting Clean Energy Utilization Within Healthcare Industry\" has been published in the IEEE Transaction in Engineering Management."
-    },
-    {
       date: "Aug 2024",
-      content: "I am happy to share that I have started my PhD in Operations Research in Virginia Tech. I am part of the Grado Department of Industrial and Systems Engineering."
-    },
-    {
-      date: "Jul 2024",
-      content: "Journal Publication \"Demystifying the Stability and the Performance Aspects of CoCoSo Ranking Method under Uncertain Preferences\" has been published in the Informatica Journal."
-    },
-    {
-      date: "June 2024",
-      content: "Book Chapter \"Cloud technology and fuzzy-based decision support systems driving sustainable development\" has been published as part of the book titled \"Decision Support Systems for Sustainable Computing\"."
-    },
-    {
-      date: "Jan 2024",
-      content: "Conference Proceeding \"Fermatean fuzzy-based PCA CoCoSo framework to assess digital technologies in Health 4.0\" has been published in IEEE Xplore as a part of the proceedings of IEEE 23rd International Symposium of Computational Intelligence and Informatics (CINTI), 2023."
+      content: "I am happy to share that I have started my PhD in Operations Research in Virginia Tech. I am part of the Grado Department of Industrial and Systems Engineering. I am working in LOTUS Lab under Prof. Rohit Kannan."
     }
   ];
 
