@@ -4,20 +4,20 @@ const Papers = () => {
   const publications = {
     journals: [
       {
+        title: "A double hierarchy fuzzy decision approach for solar farm ranking sites in India",
+        doi: "10.1016/j.eneco.2025.108993"
+      },
+      {
+        title: "Grading barriers in IoT adoption for sustainable supply chains: a double hierarchy fuzzy-based Cronbach-WISP model",
+        doi: "10.1007/s10479-025-06620-w"
+      },
+      {
+        title: "Selection of waste treatment methods for food sources: an integrated decision model using q-rung fuzzy data, LOPCOW, and COPRAS techniques",
+        doi: "10.1007/s10098-025-03160-6"
+      },
+      {
         title: "A Decision Framework With q-Rung Fuzzy Preferences for Ranking Barriers Affecting Clean Energy Utilization Within Healthcare Industry",
         doi: "10.1109/TEM.2024.3488325"
-      },
-      {
-        title: "Demystifying the Stability and the Performance Aspects of CoCoSo Ranking Method under Uncertain Preferences",
-        doi: "10.15388/24-INFOR565"
-      },
-      {
-        title: "An Evidence-Based CoCoSo Framework with Double Hierarchy Linguistic Data for Viable Selection of Hydrogen Storage Methods",
-        doi: "10.32604/cmes.2023.029438"
-      },
-      {
-        title: "Selection of a viable blockchain service provider for data management within the internet of medical things: An MCDM approach to Indian healthcare",
-        doi: "10.1016/j.ins.2023.119890"
       }
     ],
     conferences: [
