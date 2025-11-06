@@ -19,8 +19,8 @@ const Home = () => {
                   </a>
                 </p>
                 <p className="text-lg font-semibold">
-                  <a href="mailto:dhruva.sundararajan@gmail.com" className="hover:text-primary-light">
-                    dhruva.sundararajan@gmail.com
+                  <a href="mailto:dhruvasundar@vt.edu" className="hover:text-primary-light">
+                    dhruvasundar@vt.edu
                   </a>
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
