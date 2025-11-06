@@ -20,27 +20,27 @@ const Home = () => {
                 </p>
                 <p className="text-lg font-semibold">
                   <a href="mailto:dhruva.sundararajan@gmail.com" className="hover:text-primary-light">
-                    📧 dhruva.sundararajan@gmail.com
+                    dhruva.sundararajan@gmail.com
                   </a>
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <a href="https://orcid.org/0000-0001-9059-0582" className="hover:text-primary-light">
-                    🆔 ORCID
+                    ORCID
                   </a>
                   <a href="https://scholar.google.com/citations?user=YutjMrIAAAAJ&hl=en&oi=ao" className="hover:text-primary-light">
-                    🎓 Google Scholar
+                    Google Scholar
                   </a>
                   <a href="https://www.scopus.com/authid/detail.uri?authorId=58739598000" className="hover:text-primary-light">
-                    📊 Scopus
+                    Scopus
                   </a>
                   <a href="https://www.webofscience.com/wos/author/record/JVN-3094-2024" className="hover:text-primary-light">
-                    🔬 Web of Science
+                    Web of Science
                   </a>
                   <a href="https://www.researchgate.net/profile/Sundararajan-Dhruva" className="hover:text-primary-light">
-                    🔬 ResearchGate
+                    ResearchGate
                   </a>
                   <a href="https://www.linkedin.com/in/dhruva-sundararajan" className="hover:text-primary-light">
-                    💼 LinkedIn
+                    LinkedIn
                   </a>
                 </div>
               </div>
