@@ -20,12 +20,6 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
           {/* Desktop Navigation */}
           <div className="nav-links-desktop">
             <Link 
-              to="/news"
-              className={`nav-link${location.pathname === '/news' ? ' nav-active' : ''}`}
-            >
-              Recent News
-            </Link>
-            <Link 
               to="/experiences"
               className={`nav-link${location.pathname === '/experiences' ? ' nav-active' : ''}`}
             >
@@ -54,20 +48,11 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
           <ul>
             <li>
               <Link 
-                to="/news"
-                onClick={closeMobileMenu}
-                className={`nav-link${location.pathname === '/news' ? ' nav-active' : ''}`}
-              >
-                📰 Recent News
-              </Link>
-            </li>
-            <li>
-              <Link 
                 to="/experiences"
                 onClick={closeMobileMenu}
                 className={`nav-link${location.pathname === '/experiences' ? ' nav-active' : ''}`}
               >
-                💼 Experiences
+                Experiences
               </Link>
             </li>
             <li>
@@ -76,7 +61,7 @@ const Navigation = ({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu, current
                 onClick={closeMobileMenu}
                 className={`nav-link${location.pathname === '/publications' ? ' nav-active' : ''}`}
               >
-                📚 Publications
+                Publications
               </Link>
             </li>
           </ul>
