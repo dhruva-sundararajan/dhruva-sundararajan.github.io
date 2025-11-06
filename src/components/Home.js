@@ -98,7 +98,7 @@ const Home = () => {
                   <div>
                     <h3 className="text-xl font-bold text-main-content mb-2">Operations Research</h3>
                     <ul className="space-y-1 text-lg text-main-content">
-                      <li>Optimization</li>
+                      <li>Linear and Nonlinear Optimization</li>
                       <li>Multi Criteria Decision Making (MCDM)</li>
                     </ul>
                   </div>
@@ -129,6 +129,7 @@ const Home = () => {
                     <ul className="space-y-1 text-lg text-main-content">
                       <li>HiGHS</li>
                       <li>Gurobi</li>
+                      <li>SCIP</li>
                     </ul>
                   </div>
                 </div>
