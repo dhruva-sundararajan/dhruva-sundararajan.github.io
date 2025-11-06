@@ -516,27 +516,6 @@ ul li::before {
   margin-bottom: 0.5rem;
 }
 
-/* News Items */
-.news-item {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: var(--shadow-light);
-  border-left: 4px solid #f59e0b;
-  transition: all 0.3s ease;
-}
-
-.news-item:hover {
-  transform: translateX(4px);
-  box-shadow: var(--shadow-medium);
-}
-
-.news-item b {
-  color: #f59e0b;
-  font-weight: 600;
-}
-
 /* Page Transitions */
 .page-transition {
   opacity: 0;

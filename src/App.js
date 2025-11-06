@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
-import RecentNews from './components/RecentNews';
 import Experiences from './components/Experiences';
 import Papers from './components/Papers';
 
@@ -28,7 +27,6 @@ function AppContent() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<RecentNews />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/publications" element={<Papers />} />
       </Routes>

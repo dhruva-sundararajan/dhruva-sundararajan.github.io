@@ -15,7 +15,6 @@ Your static HTML website has been successfully converted to a modern React.js ap
 2. **React Components**:
    - `src/components/Navigation.js` - Navigation bar with mobile menu
    - `src/components/Home.js` - Biography, education, research interests, skills
-   - `src/components/RecentNews.js` - Recent news section
    - `src/components/Experiences.js` - Work experience section
    - `src/components/Papers.js` - Publications section
 
@@ -99,7 +98,6 @@ dhruva-sundararajan.github.io/
 │   ├── components/        # React components
 │   │   ├── Navigation.js
 │   │   ├── Home.js
-│   │   ├── RecentNews.js
 │   │   ├── Experiences.js
 │   │   └── Papers.js
 │   ├── App.js

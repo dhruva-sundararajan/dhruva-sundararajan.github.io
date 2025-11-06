@@ -65,7 +65,6 @@ The website is automatically deployed to GitHub Pages when changes are pushed to
 │   ├── components/        # React components
 │   │   ├── Navigation.js
 │   │   ├── Home.js
-│   │   ├── RecentNews.js
 │   │   ├── Experiences.js
 │   │   └── Papers.js
 │   ├── App.js            # Main App component
@@ -90,7 +89,6 @@ The website uses Tailwind CSS for styling. Custom styles are defined in `src/ind
 ### Content Updates
 
 - **Profile Information**: Update `src/components/Home.js`
-- **Recent News**: Update `src/components/RecentNews.js`
 - **Experiences**: Update `src/components/Experiences.js`
 - **Publications**: Update `src/components/Papers.js`
 
