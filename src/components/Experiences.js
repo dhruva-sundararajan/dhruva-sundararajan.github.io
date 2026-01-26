@@ -8,14 +8,13 @@ const Experiences = () => {
       period: "Jan 2025 - present",
       description: "Currently involved in the following projects:",
       details: [
-        "Learning to Predict Feasible Solutions for Quadratically Constrained Quadratic Problems (QCQPs) using Graph Neural Networks (GNNs)",
-        "Learning for Global Optimization in AC-Optimal Power Flow (AC-OPF) Problems"
+        "Learning to Predict Feasible Solutions for Mixed-Integer Non-Linear Programming (MINLP) problems using Graph Neural Networks."
       ]
     },
     {
       title: "Graduate Teaching Assistantship",
       institution: "Virginia Tech, Blacksburg, VA, USA",
-      period: "Aug 2024 - present",
+      period: "Aug 2024 - Dec 2024",
       description: "Course: Theory of Organization"
     },
     {
