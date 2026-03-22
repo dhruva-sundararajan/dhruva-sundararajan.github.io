@@ -22,8 +22,13 @@ const Papers = () => {
     ],
     conferences: [
       {
+        title: "Machine Learning Guided Undercover for Mixed-Integer Nonlinear Programming Problems",
+        conference: "INFORMS Optimization Society 2026, Atlanta, GA, USA"
+      },
+      {
         title: "Fermatean fuzzy-based PCA CoCoSo framework to assess digital technologies in Health 4.0",
-        doi: "10.1109/CINTI59972.2023.10382088"
+        doi: "10.1109/CINTI59972.2023.10382088",
+        conference: "IEEE 24th International Symposium on Computational Intelligence and Informatics, Budapest, Hungary"
       }
     ],
     bookChapters: [
@@ -33,6 +38,23 @@ const Papers = () => {
       }
     ]
   };
+
+  const renderPublicationMeta = (pub) => (
+    <>
+      {pub.conference && (
+        <p className="text-base text-main-content">
+          Conference: <span className="font-semibold">{pub.conference}</span>
+        </p>
+      )}
+      {pub.doi && (
+        <p className="text-base text-main-content">
+          DOI: <a href={`https://doi.org/${pub.doi}`} className="font-semibold hover:text-primary-light">
+            {pub.doi}
+          </a>
+        </p>
+      )}
+    </>
+  );
 
   return (
     <div className="bg-section-alt min-h-screen page-transition">
@@ -71,11 +93,7 @@ const Papers = () => {
                       <h3 className="text-lg md:text-xl font-semibold text-main-content mb-2">
                         {pub.title}
                       </h3>
-                      <p className="text-base text-main-content">
-                        DOI: <a href={`https://doi.org/${pub.doi}`} className="font-semibold hover:text-primary-light">
-                          {pub.doi}
-                        </a>
-                      </p>
+                      {renderPublicationMeta(pub)}
                     </div>
                   ))}
                 </div>
@@ -95,11 +113,7 @@ const Papers = () => {
                       <h3 className="text-lg md:text-xl font-semibold text-main-content mb-2">
                         {pub.title}
                       </h3>
-                      <p className="text-base text-main-content">
-                        DOI: <a href={`https://doi.org/${pub.doi}`} className="font-semibold hover:text-primary-light">
-                          {pub.doi}
-                        </a>
-                      </p>
+                      {renderPublicationMeta(pub)}
                     </div>
                   ))}
                 </div>
@@ -119,11 +133,7 @@ const Papers = () => {
                       <h3 className="text-lg md:text-xl font-semibold text-main-content mb-2">
                         {pub.title}
                       </h3>
-                      <p className="text-base text-main-content">
-                        DOI: <a href={`https://doi.org/${pub.doi}`} className="font-semibold hover:text-primary-light">
-                          {pub.doi}
-                        </a>
-                      </p>
+                      {renderPublicationMeta(pub)}
                     </div>
                   ))}
                 </div>
